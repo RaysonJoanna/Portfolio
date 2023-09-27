@@ -1,0 +1,19 @@
+
+#left {
+    width:20%;
+    height: auto;
+    min-width: 250px;
+    max-width: 300px;
+    background-color:#1d2c4c;
+    margin-top: 0;
+    position: absolute;
+}
+
+p {
+    color : white;
+    font-size: 15px;
+}
+
+hr {
+    border : 1px solid white;
+}

@@ -7,87 +7,108 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <style>
-        a {
-            text-decoration: none;
-            color: black;
-        }
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
 
-    </style>
+    <script src="js/left.js"></script>
+    <link rel="stylesheet" href="css/left.css">
+    <link rel="stylesheet" href="css/resume.css">
     <title>강소희 이력서</title>
 </head>
-    <body>
-
-        <div id="simple_info" class="my-auto container mt-5">
-                <!-- 이름 사진 -->
-            <div class="d-flex justify-content-center">
-                <div class="d-flex ps-3 py-3 pe-5 justify-content-center mt-5" style="background-color: #f2faf7; border: 2px solid #C4DED5; max-width: 600px;">
-                    <div class="d-flex justify-content-center">
-                        <img src="img/photo.jpg" alt="photo" style="width: 150px;" class="img-thumbnail ms-2">
-                        <div>
-                            <h1 class="mt-4 ms-5 fw-bold">강소희</h1>
-                            <p class="h6 ms-5 mt-3" style="color:gray;">노력하는 J개발자</p>
-                            <p class="h6 ms-5 mt-3">한국소프트웨어인재개발원<br>풀스택 교육과정 수료(04/20~10/16)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                <!-- 이름 사진 -->
-            <div class="px-auto">
-                <div class="mt-5 mb-5 mx-auto ps-5 border" style="max-width: 700px;">
-                    <div>
-                        <h3 class="fw-bold mt-5 ms-2 text-decoration-underline">Contact</h3>
-                        <!-- Contact -->
-                        <div class="mt-3 ms-5">
-                            <p>
-                                <i class="fas fa-blog mt-3" style="color: #0045bd;"></i>
-                                <a href="https://blog.naver.com/rayson_kingdom">Blog</a>
-                            </p>
-                            <p>
-                                <i class="fas fa-envelope" style="color: #0045bd;"></i>
-                                <a href="mailto:"mustbe01114@naver.com">mustbe01114@naver.com</a>
-                            </p>
-                            <p>
-                                <i class="fab fa-github" style="color: #0045bd;"></i>
-                                <a href="https://github.com/RaysonJoanna">GitHub/RaysonJoanna</a>
-                            </p>
-                        </div>
-                        <!-- Contact -->
-
-                        <!-- 스킬 -->
-                        <h3 class="fw-bold mt-5 ms-2 text-decoration-underline">Skills</h3>
-                        <div class="mt-3 ms-5">
-                            <p>Java, Spring Boot, SQL, JSP, JavaScript</p>
-                        </div>
-                        <!-- 스킬 -->
-
-                        <!-- 학력 -->
-                        <h3 class="fw-bold mt-5 ms-2 text-decoration-underline">Education</h3>
-                        <div class="mt-3 ms-5">
-                            <p>경상대학교 - 생명과학부 (2017.3~2022.2)</p>
-                            <p>마산제일여자고등학교 (2014.3~2017.2)</p>
-                        </div>
-                        <!-- 학력 -->
-
-                        <!-- 포트폴리오 -->
-                        <h3 class="fw-bold mt-5 ms-2 text-decoration-underline">Portfolio</h3>
-                        <div class="mt-3 ms-5 mb-5">
-                            <a href="https://RaysonJoanna.github.io/Mart-Operation-System-Java-/">
-                                <img src="img/mos.png" alt="Mart-Operation-System-Java-" width="350px" class="mb-5 border">
-                            </a>
-                            <a href="https://RaysonJoanna.github.io/me-Recipe/">
-                                <img src="img/meRecipe.png" alt="meRecipe" width="350px" class="mb-5 border">
-                            </a>
-                            <a href="https://RaysonJoanna.github.io/project_yomuka/">
-                                <img src="img/yomuka_banner.png" alt="yomuka" width="350px" class="mb-5 border">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 포트폴리오 -->
-
+<body class="d-flex">
+    <div id="left">
+        <div class="p-4">
+            <img src="img/photo.jpg" alt="강소희" class="img-fluid rounded-circle img-thumbnail"> 
         </div>
-    </header>
+        <div class="p-3">
+            <p class="fs-2 text-center fw-bold mb-3">강소희(24)</p>
+            <hr class="mt-2">
+            <div>
+                <p class="fw-bold" style="font-size: 19px;">한국소프트웨어인재개발원</p>
+                <p class="fs-6">프론트엔드UI구현 및 백엔드개발을 위한 풀스택 과정 수료<br>(2023.04.20~10.16)</p>
+            </div>
+            <hr>
+            <div>
+                <p class="fs-5">Education</p>
+                <p>경상대학교 생명과학부 졸업<br>(2017.03~2022.02)</p>
+                <p style="font-size: 14px;">마산제일여자고등학교 이과 졸업<br>(2014.03~2017.02)</p>
+            </div>
+            <hr>
+            <div>
+                <p class="fs-5 mb-2" style="margin: 0;">Certification</p>
+                <p>컴퓨터 활용 능력 2급</p>
+                <p class="fs-5 mb-2" style="margin: 0;">English</p>
+                <p style="margin:0;">TOEIC 885</p>
+                <p class="mt-2">OPIc IH</p>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div class="d-flex justify-content-center">
+            <p class="p h1 fw-bold text-center pt-2 pb-2 border-top border-bottom" id="resume">Resume</p>
+        </div>
+        <!-- 자기소개 간단하게 -->
+        <div class="d-flex justify-content-center">
+            <div class="mt-5 pt-5" style="width:80%;max-width: 1000px;">
+                <p class="p h2 fw-bold text-center mb-5">"거침없이 가자! 강소희입니다."</p>
+                <p class="p fs-5 mt-4">국비교육의 특성상 많은 언어를 깊이 있게 배우긴 어려웠습니다. 최종프로젝트를 진행하면서 JSP에서 데이터처리나 데이터베이스 연동을 하면서 이전과 다르게 코드를 짜보고 싶다고 생각했습니다. 자바스크립트, Ajax, JQuery등을 더 배우고 싶었고 따로 공부하던 스프링부트의 다른 기능도 사용해보고 싶었습니다.
+                    현직자 친구와 스터디를 하고, 인터넷에서 강의를 찾아보고 검색해보며 '모래모레' 프로젝트를 진행했습니다. 개발자는 바뀌는 트렌드와 빠르게 업그레이드 되는 틀을 익히기 위해 도전해야한다고 생각합니다. 개인프로젝트를 위해 거침없이 도전했듯이 트렌디하고 언제나 업데이트 된 개발자가 될 수 있도록 노력하겠습니다.
+                </p>
+            </div>
+        </div>
+        <!-- 메인스킬 -->
+        <p class="p h3 fw-bold text-center pt-4 mb-3" style="margin-top: 100px;">Main Skills</p>
+        <div>
+            <div class="text-center">
+                <img src="img/java_s.png" alt="메인스킬-자바" style="width:80%;max-width: 1000px;">
+            </div>
+            <div class="text-center">
+                <img src="img/screen_s.png" alt="메인스킬-화면" style="width:80%;max-width: 1000px;">
+            </div>
+            <div class="text-center">
+                <img src="img/sql_s.png" alt="메인스킬-SQL" style="width:80%;max-width: 1000px;">
+            </div>
+            <div class="text-center">
+                <img src="img/springboot_s.png" alt="메인스킬-스프링부트" style="width:80%;max-width: 1000px;">
+            </div>
+            <div class="text-center ms-1">
+                <img src="img/tools.png" alt="사용가능 툴" style="width:38%;max-width: 500px;">
+                <img src="img/colaboration_s.png" alt="사용가능 협업 툴" style="width:38%;max-width: 500px;">
+            </div>
+        </div>
+
+        <!-- 프로젝트 포트폴리오 -->
+        <div class="mt-5">
+            <p class="p h3 fw-bold text-center mt-5 pt-4">Portfolio</p>
+            <div class="mt-3 mb-3 text-center mt-5 d-block">
+                <a href="https://RaysonJoanna.github.io/Mart-Operation-System-Java-/">
+                    <img src="img/mos.png" alt="Mart-Operation-System-Java-" width="300px" class="mb-5 border">
+                </a>
+                <a href="https://RaysonJoanna.github.io/me-Recipe/">
+                    <img src="img/meRecipe.png" alt="meRecipe" width="300px" class="mb-5 border ms-3">
+                </a>
+                <br>
+                <a href="https://RaysonJoanna.github.io/project_yomuka/">
+                    <img src="img/yomuka_banner.png" alt="yomuka" width="300px" class="mb-5 border">
+                </a>
+                <a href="https://github.com/RaysonJoanna/YOMUKA">
+                    <img src="img/yomuka_web.png" alt="yomuka_web" width="300px" class="mb-5 border ms-3">
+                </a>
+            </div>
+
+            <!-- 블로그 이동 -->
+            <div class="mt-3 mb-5 d-flex justify-content-center">
+                <a href="https://blog.naver.com/rayson_kingdom" class="d-flex">
+                    <i class="fas fa-sticky-note my-auto me-2" style="color: #464b55;"></i>
+                    <p class="p fs-3 fw-bold text-center my-auto">공부기록 블로그</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
